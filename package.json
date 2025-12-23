@@ -17,6 +17,9 @@
     "start": "medusa start",
     "dev": "medusa develop",
     "seed": "medusa exec ./src/scripts/seed.ts",
+
+    "db:migrate": "medusa db:migrate",
+
     "test:integration:http": "TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
     "test:integration:modules": "TEST_TYPE=integration:modules NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
     "test:unit": "TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit"
@@ -25,7 +28,15 @@
     "@medusajs/admin-sdk": "2.11.3",
     "@medusajs/cli": "2.11.3",
     "@medusajs/framework": "2.11.3",
-    "@medusajs/medusa": "2.11.3"
+    "@medusajs/medusa": "2.11.3",
+    "@mercurjs/algolia": "^1.4.5",
+    "@mercurjs/b2c-core": "^1.4.5",
+    "@mercurjs/commission": "^1.4.5",
+    "@mercurjs/framework": "^1.4.5",
+    "@mercurjs/payment-stripe-connect": "^1.4.5",
+    "@mercurjs/requests": "^1.4.5",
+    "@mercurjs/resend": "^1.4.5",
+    "@mercurjs/reviews": "^1.4.5"
   },
   "devDependencies": {
     "@medusajs/test-utils": "2.11.3",
